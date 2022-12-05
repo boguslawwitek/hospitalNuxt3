@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "hospitalnuxt3-front",
+  "author": "Bogusław Witek",
+  "license": "MIT",
+  "version": "1.0.1",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "^3.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/vue-fontawesome": "^3.0.1",
+    "editorjs-html": "^3.4.2",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "vue3-picture-swipe": "^3.0.6"
+  }
+}

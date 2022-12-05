@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import '../assets/styles/hamburger.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  position: relative;
+  color: black;
+  min-height: 100vh;
+  line-height: 1.4;
+}
+
+input, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.bold-500 {
+  font-weight: 500;
+}
+
+.bold-600 {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+img {
+  user-select: none;
+}
+
+b {
+  font-weight: 600;
+}
+
+.contrast .hamburger-inner {
+
+  &,
+  &::before,
+  &::after {
+    background-color: black;
+  }
+
+}
+
+.contrast .hamburger {
+  &.is-active {
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: black;
+    }
+  }
+}

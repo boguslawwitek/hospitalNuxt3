@@ -1,0 +1,192 @@
+@import './colors.scss';
+
+.container {
+    font-size: 10px;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+  
+.large .container {
+    font-size: 13px;
+}
+  
+.small .container {
+    font-size: 8px;
+}
+
+.contrast .container {
+    background-color: black;
+    font-weight: 400;
+    color: yellow;
+}
+  
+.dark .container {
+    background-color: $dark-bg;
+    font-weight: 400;
+    color: white;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main section {
+    padding: 20px 30px;
+}
+
+.main section h2 {
+    font-size: 4em;
+    padding: 10px 0;
+    color: $light-heading;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.contrast .main section h2 {
+    color: yellow;
+    font-weight: 600;
+  }
+  
+.dark .main section h2 {
+    color: $dark-heading;
+    font-weight: 600;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.8em;
+}
+
+.flex .left {
+  padding: 5px 50px 5px 0;
+  width: 65%;
+}
+
+.flex .left :deep(ul), .flex .left :deep(ol) {
+  margin-left: 30px;
+}
+
+.flex .left :deep(div):nth-child(1) {
+  margin-bottom: 30px;
+}
+
+.flex .left :deep(p) {
+  margin-bottom: 10px;
+}
+
+.flex .right {
+  width: 35%;
+}
+
+.flex .right :deep(ul), .flex .right :deep(ol) {
+  list-style-type: none;
+}
+
+.flex .right :deep(p) {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.flex .right :deep(ul) > :deep(ul) > :deep(li), .flex .right :deep(ol) > :deep(ol) > :deep(li), .flex .right :deep(ul) > :deep(ol) > :deep(li), .flex .right :deep(ol) > :deep(ul) > :deep(li) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex .right .place {
+  color: $light-heading;
+  font-weight: 600;
+}
+
+.dark .flex .right .place {
+  color: $dark-heading;
+}
+
+.contrast .flex .right .place {
+  color: yellow;
+}
+
+.flex .right .call {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.flex .right .contact {
+  margin-top: 10px;
+}
+
+.flex .right .call .icon {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.dark .flex .right .call .icon {
+  font-weight: 500;
+}
+
+.red {
+  color: red;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.important {
+  font-size: 2em;
+}
+
+.important :deep(ol), .important :deep(ul) {
+  margin-left: 30px;
+}
+
+.second {
+  margin-top: 20px;
+}
+
+.main :deep(b) {
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .main section h2 {
+        font-size: 3.5em;
+    }
+
+    .flex {
+      flex-direction: column;
+      padding: 0 10px;
+    }
+
+    .important {
+      padding: 0 10px;
+    }
+
+    .flex .right {
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .flex .left {
+      padding: 5px 0 5px 0;
+      width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .main section {
+        padding: 10px 5px;
+    }
+
+    .main section h2 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 400px) {
+    .main section h2 {
+        font-size: 2.5em;
+    }
+}
